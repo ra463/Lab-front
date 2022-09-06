@@ -1,0 +1,299 @@
+.profile {
+  margin-top: 3rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+
+  .profile-box1 {
+    padding: 1rem;
+    background-color: #dadada19;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    height: 83.5vh;
+    width: 15rem;
+
+    .header__logo {
+      margin: 10px 0;
+    }
+    .profile-box1__menu {
+      a {
+        display: flex;
+        margin-top: 1rem;
+        flex-direction: row;
+        cursor: pointer;
+        font-weight: bold;
+        background-color: #d3d3d345;
+        padding: 0.7rem;
+        border-radius: 10px;
+
+        &:hover {
+          background-color: #d3d3d37b;
+        }
+
+        svg {
+          margin-right: 7px;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .profile-box2 {
+    margin-left: 1rem;
+    width: 62rem;
+
+    .heading {
+      width: 100%;
+      background-color: #dadada19;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      height: 12.5vh;
+      border-radius: 10px;
+      padding-left: 1rem;
+      .head {
+        color: #5d6878;
+      }
+    }
+    .profile-box2__content {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1rem;
+
+      .profile-box2__content__1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 25rem;
+        padding: 1rem 0;
+        height: 68vh;
+        border-radius: 10px;
+        background-color: #dadada19;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+
+        .avatar {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-bottom: 1px solid rgba(112, 128, 144, 0.47);
+
+          button {
+            padding: 0.5rem;
+            background: #ffcc00;
+            color: white;
+            border-radius: 10px;
+            margin: 1rem;
+          }
+        }
+
+        .details {
+          width: 100%;
+          text-align: start;
+          padding: 0 1rem;
+
+          span {
+            display: flex;
+            flex-direction: row;
+            font-weight: bold;
+            padding: 0.3rem;
+            margin: 0.7rem 0;
+            padding-left: 1rem;
+            border-radius: 5px;
+            background-color: #d3d3d345;
+
+            &:hover {
+              background-color: #d3d3d37b;
+            }
+
+            p {
+              margin-left: 5px;
+              color: orange;
+            }
+          }
+        }
+      }
+      .profile-box2__content__2 {
+        width: 36rem;
+        margin-right: 1rem;
+
+        h4 {
+          font-weight: bold;
+          font-size: 1.3rem;
+          padding: 0.5rem;
+          border-radius: 10px;
+          width: 100%;
+          margin-left: 1rem;
+          background-color: #dadada19;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        }
+        .moredetails {
+          width: 100%;
+          text-align: start;
+          padding: 0.1rem 0;
+          margin-top: 1rem;
+          border-radius: 10px;
+          margin-left: 1rem;
+          background-color: #dadada19;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+
+          span {
+            display: flex;
+            flex-direction: row;
+            font-weight: bold;
+            padding: 0.3rem;
+            padding-left: 1rem;
+            margin: 0.7rem 1rem;
+            border-radius: 5px;
+            background-color: #d3d3d345;
+            &:hover {
+              background-color: #d3d3d37b;
+            }
+            p {
+              margin-left: 5px;
+              color: orange;
+            }
+          }
+        }
+        .subscription {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 100%;
+          margin-top: 1rem;
+          border-radius: 10px;
+          height: 12.7rem;
+          margin-left: 1rem;
+          background-color: #dadada19;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+          .subs {
+            display: flex;
+            flex-direction: column;
+            .sub {
+              box-shadow: none;
+              margin: 0.5rem 0;
+              margin-left: 0.5rem;
+            }
+            p {
+              margin-left: 0.5rem;
+            }
+            span {
+              margin-left: 0.5rem;
+              button {
+                margin-top: 0.5rem;
+              }
+            }
+          }
+          .img {
+            margin-right: 1rem;
+            margin-top: 1rem;
+            img {
+              width: 11rem;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+
+    .profile-box1 {
+      padding-top: 0;
+      width: 100%;
+      height: 100%;
+
+      .header__logo {
+        margin-top: 0;
+      }
+    }
+    .profile-box2 {
+      margin-left: 0;
+      width: 100%;
+      height: 100%;
+
+      .heading {
+        margin-top: 1rem;
+        width: 100%;
+        height: 11vh;
+      }
+
+      .profile-box2__content {
+        flex-direction: column;
+
+        .profile-box2__content__1 {
+          width: 100%;
+          height: auto;
+        }
+
+        .profile-box2__content__2 {
+          width: 100%;
+          padding-left: 0;
+          margin-left: 0;
+          margin-top: 1rem;
+
+          h4 {
+            margin-left: 0;
+          }
+          .moredetails {
+            margin-left: 0;
+          }
+          .subscription {
+            height: auto;
+            margin-left: 0;
+            flex-direction: column;
+
+            .subs {
+
+              .sub {
+                width: fit-content;
+              }
+            }
+
+            .img{
+              margin: 1rem auto;
+              img{
+                border-radius: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.changeavatar{
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input{
+      margin: 1rem auto;
+      border: 1px solid lightslategray;
+      padding: 0.7rem;
+      border-radius: 10px;
+
+      &:hover{
+        border: 1px solid #ffcc00;
+      }
+    }
+
+    button{
+      padding: 0.5rem 1rem;
+      font-weight: bold;
+      color: white;
+      border:2px solid #ffcc00;
+      border-radius: 5px;
+      background: #ffcc00;
+      transition: 0.3s all;
+
+      &:hover{
+        background: white;
+        color: #ffcc00;
+      }
+    }
+  }
+}

@@ -1,0 +1,228 @@
+.dashboard {
+  padding-top: 10px;
+  .dashboard-box {
+    margin-top: 3.2rem;
+    height: 89vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+
+    .dash {
+      background: #f7f7ff;
+      height: 89vh;
+      overflow: auto;
+
+      .dash-head {
+        display: flex;
+        padding-left: 1rem;
+        border-bottom: 1px solid #e4e4e4;
+        height: 11.1vh;
+        .head-2 {
+          display: flex;
+          flex-direction: column;
+          font-weight: bold;
+          font-size: 1.5rem;
+          color: #3461ff;
+          width: 15rem;
+        }
+        .search {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin: 0.7rem 0;
+          margin-left: 5rem;
+          border-radius: 50px;
+          padding-left: 10px;
+          padding-right: 2rem;
+          border: 1px solid #b5c2d4;
+          width: 25%;
+
+          input {
+            outline: none;
+            border: none;
+            background-color: #d3d3d312;
+
+            &::placeholder {
+              color: #5d6878;
+            }
+          }
+
+          svg {
+            margin-right: 5px;
+            color: #5d6878;
+          }
+        }
+        .search1 {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          border: 1px solid #b5c2d4;
+          margin: 0.7rem 0;
+          margin-left: 1rem;
+          border-radius: 50px;
+          width: 20%;
+          padding-left: 0.5rem;
+          p {
+            padding-left: 5px;
+            color: black;
+          }
+        }
+        .svg {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+
+          svg {
+            margin-left: 1rem;
+            border-radius: 50px;
+            padding: 0.5rem;
+            color: black;
+            font-size: 2.5rem;
+            border: 1px solid #b5c2d4;
+
+            &:hover {
+              background-color: #5d687856;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1115px) {
+    .dashboard-box {
+      .dash {
+        .dash-head {
+          .search1 {
+            display: none;
+          }
+          .svg {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 755px) {
+    .dashboard-box {
+      .dash {
+        .dash-head {
+          .search {
+            margin-left: 0rem;
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .dashboard-box {
+      grid-template-columns: 1fr;
+      height: auto;
+      .dash {
+        height: auto;
+        .dash-head {
+          .search {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dash-body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1rem;
+  margin-left: 0;
+
+  .data-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 1rem;
+    align-items: center;
+    width: 17rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    div {
+      div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+    }
+    .svg {
+      margin-left: 1rem;
+      border-radius: 50px;
+      color: black;
+      padding: 0.5rem 0.9rem;
+      font-size: 3.5rem;
+      border: 1px solid #b5c2d4;
+
+      &:hover {
+        background-color: #e4e4e456;
+      }
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    margin-top: 0;
+    .data-box {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  }
+}
+
+.graph-head {
+  margin: 1rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  div {
+    padding: 1rem;
+  }
+}
+
+.views-graph {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  margin: 1rem;
+  .progress-bar {
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    .bar {
+      margin: 0.5rem 0;
+      div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+  }
+
+  .next-graph {
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 1rem;
+  }
+
+  @media screen and (max-width: 750px) {
+    grid-template-columns: 1fr;
+    .next-graph {
+      margin-top: 1rem;
+      margin-left: 0;
+    }
+  }
+}

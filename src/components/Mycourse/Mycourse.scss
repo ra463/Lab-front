@@ -1,0 +1,78 @@
+.mycourse {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 4rem;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+  .mycourse__playlist__item__card {
+    display: flex;
+    background-color: #dadada19;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 1rem 0;
+
+    img {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      width: 10rem;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      a {
+        margin-top: 1rem;
+        margin-left: 1rem;
+      }
+      .delete {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: red;
+        border: 2px solid red;
+        color: white;
+        font-weight: bold;
+        padding: 0.3rem;
+        border-radius: 5px;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        transition: 0.3s all;
+
+        &:hover {
+          background: white;
+          color: red;
+          border: 2px solid red;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .mycourse__playlist__item__card {
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 100%;
+        border-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+      div {
+        flex-direction: row;
+        a {
+          margin-bottom: 1rem;
+        }
+
+        .delete {
+          padding: 0 1rem;
+          height: 2.5rem;
+        }
+      }
+    }
+  }
+}

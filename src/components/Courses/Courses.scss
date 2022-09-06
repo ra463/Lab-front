@@ -1,0 +1,48 @@
+.allcourse {
+  padding-top: 5rem;
+
+  .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input {
+      padding: 0.5rem;
+      border: 1px solid #b5c2d4;
+      border-radius: 10px;
+      width: 50%;
+      margin-top: 1rem;
+
+      &:focus {
+        outline: none !important;
+        border-color: #85b8ed;
+        box-shadow: 0 0 10px #85b8ed;
+      }
+      &::placeholder {
+        color: #b5c2d4;
+      }
+
+      @media screen and (max-width: 430px) {
+        width: 80%;
+      }
+    }
+  }
+  .category {
+    margin-top: 1rem;
+    margin-right: 31rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 750px) {
+      margin-right: 0;
+    }
+  }
+  .course {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:auto;
+  }
+}

@@ -1,0 +1,114 @@
+.createcourse {
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 30rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    input {
+      outline: none;
+      background: white;
+      margin-top: 1rem;
+      border: 1px solid #b5c2d4;
+      padding: 0.7rem;
+      border-radius: 7px;
+
+      &:focus {
+        outline: none !important;
+        border-color: #85b8ed;
+        box-shadow: 0 0 10px #85b8ed;
+      }
+
+      &::placeholder{
+        color: #718096;
+      }
+
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+    }
+
+    .textarea {
+      outline: none;
+      border: 1px solid #b5c2d4;
+      background: white;
+      border-radius: 10px;
+      margin-top: 1rem;
+      padding: 0.8rem;
+
+      &:focus {
+        outline: none !important;
+        border-color: #85b8ed !important;
+        box-shadow: 0 0 10px #85b8ed;
+      }
+
+      &::placeholder{
+        color: #718096;
+      }
+    }
+    select {
+      outline: none;
+      margin-top: 1rem;
+      border: 1px solid #b5c2d4;
+      color:rgb(134, 141, 149) ;
+
+      &:focus {
+        outline: none !important;
+        border-color: #85b8ed;
+        box-shadow: 0 0 10px #85b8ed;
+      }
+    }
+    .css-zj2dqk {
+      top: 65% !important;
+      color: black;
+    }
+
+    .imagepre {
+      margin-top: 1rem;
+    }
+
+    img {
+      margin: -1rem auto;
+      margin-top: -2rem;
+    }
+    button {
+      outline: none;
+      border: 2px solid #3461ff;
+      padding: 0.3rem;
+      border-radius: 7px;
+      font-weight: bold;
+      background: #3460ff21;
+      transition: all 0.2s ease-in-out;
+      color: #3461ff;
+      cursor: pointer;
+
+      &:hover {
+        background: #3461ff;
+        color: white;
+      }
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    width: 25rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    width: 90%;
+
+    form {
+      img {
+        margin: 1rem auto;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
