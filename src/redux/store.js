@@ -21,4 +21,4 @@ const store = configureStore({
 
 export default store;
 
-export const server = 'https://learning-lab-rp.herokuapp.com/api/v1';
+export const server = 'https://llab-back.vercel.app/api/v1';
